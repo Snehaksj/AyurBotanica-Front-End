@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url("/DelaGothicOne-Regular.ttf") format("truetype");
+}
+.banner {
+  position: relative;
+  height: 55vh;
+  width: 100%;
+  background: url("banner.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.banner h1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  position: absolute;
+  font-size: 5em;
+  margin-top: -0.25em;
+  font-family: "Dela Gothic One";
+}

@@ -24,15 +24,15 @@ export default function Info() {
 
   // Create an object containing the parameters
   const data = {
-    plant_names: [name4, name2, name1, name3, name5],
+    plant_names: [name2, name1, name3],
   };
   const match = {
     plant_match: [
-      percentage4,
+      // percentage4,
       percentage2,
       percentage1,
       percentage3,
-      percentage5,
+      // percentage5,
     ],
   };
 
