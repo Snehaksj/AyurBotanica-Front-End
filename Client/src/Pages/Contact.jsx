@@ -1,11 +1,9 @@
-import Background from "../Components/Background/Background.jsx";
 import Navbar from "../Components/NavigationBar/Navbar.jsx";
+import styles from "./Page_css/Contact.module.css";
 export default function Contact() {
   return (
-    <div className="Contact">
-      <Background>
-        <Navbar></Navbar>
-      </Background>
+    <div className={styles.contact}>
+      <Navbar></Navbar>
     </div>
   );
 }

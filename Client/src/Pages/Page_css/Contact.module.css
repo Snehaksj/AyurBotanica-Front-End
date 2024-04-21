@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url("/DelaGothicOne-Regular.ttf") format("truetype");
+}
+.contact {
+  margin: 0;
+  padding: 0;
+  background: rgb(13, 1, 9);
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: white;
+  box-sizing: border-box;
+}

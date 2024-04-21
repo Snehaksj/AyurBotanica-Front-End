@@ -3,9 +3,11 @@
   src: url("/DelaGothicOne-Regular.ttf") format("truetype");
 }
 .banner {
+  margin: 0;
+  padding: 0;
   position: relative;
   height: 55vh;
-  width: 100%;
+  width: 100vw;
   background: url("banner.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
