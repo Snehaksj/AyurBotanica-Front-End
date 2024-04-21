@@ -13,7 +13,7 @@
   height: 40vh;
   animation: floatAnimation 0.75s infinite ease-in-out alternate;
   border-radius: 100%;
-  filter: drop-shadow(0 0 10em rgb(21, 241, 18));
+  filter: drop-shadow(0 0 90px rgb(29, 248, 26));
 }
 
 @keyframes floatAnimation {

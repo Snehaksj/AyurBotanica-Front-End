@@ -45,3 +45,8 @@
 .popupContent img {
   height: 7vh;
 }
+@media screen and (min-height: 890px) {
+  .popup button {
+    height: 3vh;
+  }
+}

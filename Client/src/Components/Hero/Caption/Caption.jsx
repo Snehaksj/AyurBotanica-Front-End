@@ -7,8 +7,13 @@ export default function Caption() {
         AYURBOTANICA: <br />
         BOTANIC DISCOVERY
       </p>
-      <p style={{marginTop:-2+"vh",fontSize:1.5 +"rem",fontWeight:450}}>Unveiling the Healing Secrets of Medicinal Plants with Deep Learning. <br />
-          What are you waiting for? Try out now!</p>
+      <p
+        style={{ marginTop: -2 + "vh", fontSize: 1.5 + "rem", fontWeight: 450 }}
+      >
+        Unveiling the Healing Secrets of Medicinal Plants with Deep Learning.{" "}
+        <br />
+        What are you waiting for? Try out now!
+      </p>
     </div>
   );
 }

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Dela Gothic One";
+  src: url("/DelaGothicOne-Regular.ttf") format("truetype");
+}
+.card {
+  height: 90vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2em;
+}
+
+.card img,
+.centerCard img,
+.middleCard img {
+  box-shadow: rgba(21, 241, 18, 0.2) 0px 54px 55px,
+    rgba(50, 248, 47, 0.2) 0px -12px 30px, rgba(21, 241, 18, 0.2) 0px 4px 6px,
+    rgba(21, 241, 18, 0.2) 0px 4px 15px;
+  border-radius: 5px;
+  transition: filter 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+.card img {
+  height: 50vh;
+  width: 17vw;
+}
+.centerCard img {
+  height: 60vh;
+  width: 22vw;
+}
+.middleCard img {
+  height: 55vh;
+}
+.card img:hover,
+.centerCard img:hover,
+.middleCard img:hover {
+  opacity: 0.55;
+  transform: scale(1.05);
+}
+
+.caption,
+.centerCard .caption,
+.middleCard .caption {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-family: "Dela Gothic One";
+  text-align: center;
+  pointer-events: none;
+}
+.caption {
+  font-size: 2.5em;
+  margin-top: -0.25em;
+}
+
+.centerCard .caption {
+  font-size: 4em;
+  padding-top: 2em;
+}
+.middleCard {
+  position: relative;
+}
+.middleCard .caption {
+  font-size: 3em;
+}
+.carditems {
+  position: relative;
+}
+
+.carditems:hover .caption,
+.centerCard:hover .caption,
+.middleCard:hover .caption {
+  opacity: 1; /* Show plant name on hover */
+}
+@media screen and (min-height: 890px) and (min-width: 1400px) {
+  .card img {
+    height: 40vh;
+    width: 16vw;
+  }
+  .centerCard img {
+    height: 50vh;
+    width: 20vw;
+  }
+  .middleCard img {
+    height: 45vh;
+    width: 18vw;
+  }
+}
