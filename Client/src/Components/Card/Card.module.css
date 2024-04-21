@@ -117,23 +117,28 @@
   text-align: center;
   pointer-events: none;
 }
-@media screen and (min-height: 890px) and (min-width: 1500px) {
+@media screen and (min-width: 1500px) {
   .card img {
     height: 40vh;
     width: 16vw;
   }
-  .centerCard img {
-    height: 50vh;
-    width: 20vw;
+  .centerCard .centerCardimg {
+    height: 55vh;
+    width: 23vw;
   }
-  .middleCard img {
+  .middleCard .middleCardimg {
     height: 45vh;
-    width: 18vw;
+    width: 19vw;
   }
   .centerCard .caption {
-    font-size: 4em;
+    font-size: 4.5em;
   }
   .centerCard .firststep {
-    font-size: 4em;
+    font-size: 4.5em;
+  }
+}
+@media screen and (min-height: 890px) {
+  .heading {
+    font-size: 4.5em;
   }
 }

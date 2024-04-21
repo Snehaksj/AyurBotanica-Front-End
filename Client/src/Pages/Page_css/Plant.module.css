@@ -37,12 +37,14 @@
 
 .subcontainer p {
   font-size: 1.5em;
+  font-family: "Segoe UI";
   margin-top: -0.25em;
   line-height: 1.5;
 }
 
 .subcontainer p em {
   font-style: italic;
+  /* font-family: "Segoe UI"; */
   font-size: 1.8em;
 }
 
@@ -53,7 +55,7 @@
   }
 
   .subcontainer p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .subcontainer p em {
