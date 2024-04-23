@@ -16,7 +16,7 @@
 .contact .heading {
   font-family: "Dela Gothic One";
   font-size: 4em;
-  filter: drop-shadow(0 0 10px rgb(128, 19, 147));
+  filter: drop-shadow(0 0 10px rgb(159, 25, 182));
   text-align: center;
   color: white;
   position: absolute;
@@ -50,7 +50,7 @@
   font-family: "Dela Gothic One";
   font-size: 4em;
   margin-bottom: 2em;
-  filter: drop-shadow(0 0 10px rgb(128, 19, 147));
+  filter: drop-shadow(0 0 12px rgb(169, 26, 194));
 }
 .images {
   height: 50vh;
