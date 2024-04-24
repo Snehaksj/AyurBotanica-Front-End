@@ -55,22 +55,22 @@ def predict():
 
         # Return the prediction in JSON format
         return jsonify({"pred": dummy_prediction})
-# @app.route('/upload', methods=['POST'])
-# def upload():
-#     try:
-#         plant = {
-#             "name": "Lemon",
-#             "binomial_nomenclature": "Citrus limon",
-#             "description": "The lemon leaf, a fragrant member of the Citrus genus, is prized for its aromatic foliage and versatile uses. With its glossy, ovate leaves and petite white flowers, it adds a touch of elegance to gardens and landscapes. Native to South Asia, it has found its way into culinary, medicinal, and aromatic applications worldwide. The zesty aroma and citrusy flavor of its leaves are esteemed in cooking, herbal teas, and essential oils. Lemon leaves are also valued for their potential health benefits, including digestive support, immune enhancement, and stress relief.",
-#             "medicinal_values": "Lemon leaves are renowned for their potential health benefits, including digestive support, immune enhancement, and stress relief. Rich in antioxidants and essential oils, they possess antimicrobial, anti-inflammatory, and calming properties. Consumed as herbal teas or incorporated into culinary dishes, lemon leaves offer a refreshing and invigorating experience.",
-#             "area_found": "Lemon trees flourish in subtropical and tropical regions worldwide, including countries such as India, Italy, Spain, United States, and Australia. They thrive in warm climates with well-drained soil and ample sunlight, making them popular additions to gardens, orchards, and landscapes.",
-#             "best_suitable_soil": "Lemon trees prefer well-drained, slightly acidic soils with a pH range between 5.5 and 6.5. Sandy loam or loamy soils rich in organic matter are ideal for optimal growth and fruit production. Adequate moisture retention and good drainage are essential for healthy root development and overall plant vigor.",
-#         }
-#         collection.insert_one(plant)
-#         return jsonify({"message": "Plant details uploaded successfully"})
-#     except Exception as e:
-#         print("Error:", e)
-#         return jsonify({"error uploading": str(e)})
+@app.route('/upload', methods=['POST'])
+def upload():
+    try:
+        plant = {
+            "name": "Lemon",
+            "binomial_nomenclature": "Citrus limon",
+            "description": "The lemon leaf, a fragrant member of the Citrus genus, is prized for its aromatic foliage and versatile uses. With its glossy, ovate leaves and petite white flowers, it adds a touch of elegance to gardens and landscapes. Native to South Asia, it has found its way into culinary, medicinal, and aromatic applications worldwide. The zesty aroma and citrusy flavor of its leaves are esteemed in cooking, herbal teas, and essential oils. Lemon leaves are also valued for their potential health benefits, including digestive support, immune enhancement, and stress relief.",
+            "medicinal_values": "Lemon leaves are renowned for their potential health benefits, including digestive support, immune enhancement, and stress relief. Rich in antioxidants and essential oils, they possess antimicrobial, anti-inflammatory, and calming properties. Consumed as herbal teas or incorporated into culinary dishes, lemon leaves offer a refreshing and invigorating experience.",
+            "area_found": "Lemon trees flourish in subtropical and tropical regions worldwide, including countries such as India, Italy, Spain, United States, and Australia. They thrive in warm climates with well-drained soil and ample sunlight, making them popular additions to gardens, orchards, and landscapes.",
+            "best_suitable_soil": "Lemon trees prefer well-drained, slightly acidic soils with a pH range between 5.5 and 6.5. Sandy loam or loamy soils rich in organic matter are ideal for optimal growth and fruit production. Adequate moisture retention and good drainage are essential for healthy root development and overall plant vigor.",
+        }
+        collection.insert_one(plant)
+        return jsonify({"message": "Plant details uploaded successfully"})
+    except Exception as e:
+        print("Error:", e)
+        return jsonify({"error uploading": str(e)})
 @app.route("/fetch", methods=['POST'])
 def fetch():
     try:
