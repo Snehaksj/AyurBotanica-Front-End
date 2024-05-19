@@ -54,6 +54,10 @@ export default function Plant() {
             <b>Best Suitable Soil:</b>
           </p>
           <p>{plantDetails.best_suitable_soil}</p>
+          <p>
+            <b>Medicinal values:</b>
+          </p>
+          <p>{plantDetails.medicinal_values}</p>
         </div>
         <div className={styles.imgcontainer}>
           <img src={getImageSrc(name)} alt={name} />
